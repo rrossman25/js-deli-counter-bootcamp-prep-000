@@ -13,5 +13,6 @@ function nowServing(currentNum){
      while (currentNum.length > 0){
        return currentNum[i];
        currentNum.shift()
+     }
   }
 }
