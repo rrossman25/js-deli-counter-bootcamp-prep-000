@@ -1,8 +1,6 @@
 function takeANumber(currentNum, name){
   currentNum.push(name);
   return `Welcome, ${name}. You are number ${currentNum.length} in line`;
-    }
-  }
 }
 
 function nowServing(currentNum){
