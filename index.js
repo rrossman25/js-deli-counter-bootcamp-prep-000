@@ -11,8 +11,11 @@ function nowServing(currentNum){
   else{
      let i = 0;
      while (currentNum.length > 0){
-       return currentNum[i];
-       currentNum.shift()
+       let now = currentNum[i];
+       currentNum.shift();
+       return now;
      }
   }
 }
+
+function currentLine(currentNum)
