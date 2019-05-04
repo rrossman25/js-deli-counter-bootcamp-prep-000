@@ -1,4 +1,5 @@
 function takeANumber(currentNum, name){
+  
   for (let i = 0; i < currentNum.length; i++){
     if (currentNum[i] === name){
       return `Welcome, ${name}. You are number ${i+1} in line`;
