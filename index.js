@@ -18,12 +18,19 @@ function nowServing(currentNum){
 }
 
 function currentLine(currentNum){
+  let str = 'The line is currently: ';
   if (currentNum.length === 0){
     return "The line is currently empty."
   }
   else{
     for (let i = 0; i < currentNum.length; i++){
-      return `The line is currently: ${i+1}. ${currentNum[i]},`
+      str += `${i + 1}. ${currentNum[i]}`;
+      if (i + 1 !== currentNum.length){
+        str += ', ';
+      }
     }
   }
 }
+
+
+
