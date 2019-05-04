@@ -9,8 +9,9 @@ function nowServing(currentNum){
     return "There is nobody waiting to be served";
   }
   else{
-    while (currentNum.length > 0){
-      return currentNum[i]
-    }
+     let i = 0;
+     while (currentNum.length > 0){
+       return currentNum[i];
+       currentNum.shift()
   }
 }
