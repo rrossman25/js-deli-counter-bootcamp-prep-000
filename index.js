@@ -1,6 +1,8 @@
 function takeANumber(currentNum, name){
   for (let i = 0; i < currentNum.length; i++){
-    return `Welcome, ${name}. You are number ${i+1} in line`;
+    if (currentNum[i] === name){
+      return `Welcome, ${name}. You are number ${i+1} in line`;
+    }
   }
 }
 
@@ -13,9 +15,18 @@ function nowServing(currentNum){
      while (currentNum.length > 0){
        let now = currentNum[i];
        currentNum.shift();
-       return now;
+       return `Currently serving ${now}.`;
      }
   }
 }
 
-function currentLine(currentNum)
+function currentLine(currentNum){
+  if (currentNum.length === 0){
+    return "The line is currently empty."
+  }
+  else{
+    for (let i = 0; i < currentNum.length; i++){
+      return `The line is currently: ${i+1}. ${currentNum[i]},`
+    }
+  }
+}
