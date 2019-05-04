@@ -5,7 +5,7 @@ function takeANumber(currentNum, name){
 
 function nowServing(currentNum){
   if (currentNum.length === 0){
-    return "There is nobody waiting to be served";
+    return "There is nobody waiting to be served!";
   }
   else{
      let i = 0;
