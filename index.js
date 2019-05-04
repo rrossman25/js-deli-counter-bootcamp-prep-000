@@ -30,6 +30,7 @@ function currentLine(currentNum){
       }
     }
   }
+  return str;
 }
 
 
